@@ -1,0 +1,26 @@
+[common]
+server_addr = cn-jx-dx-1.msrx.online
+server_port = 2333
+tcp_mux = true
+protocol = tcp
+user = 7b696e1cabe0e288
+token = RXFRPToken
+dns_server = 114.114.114.114
+[nixiang2]
+privilege_mode = true
+type = tcp
+local_ip = 127.0.0.1
+local_port = 32038
+remote_port = 60331
+sk = nixiang2
+use_encryption = true
+use_compression = true
+[zhengxiang2]
+privilege_mode = true
+type = tcp
+local_ip = 127.0.0.1
+local_port = 32032
+remote_port = 40278
+sk = zhengxiang2
+use_encryption = true
+use_compression = true

@@ -1,0 +1,1 @@
+set frpwindow=off
