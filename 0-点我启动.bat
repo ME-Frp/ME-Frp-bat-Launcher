@@ -1,3 +1,6 @@
+1
+
+
 @ECHO OFF
 setlocal enabledelayedexpansion
 mode con cols=66 lines=30
