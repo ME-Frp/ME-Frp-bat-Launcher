@@ -1,5 +1,4 @@
-1
-
+234567
 
 @ECHO OFF
 setlocal enabledelayedexpansion
