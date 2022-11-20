@@ -9,15 +9,20 @@ for /f "tokens=3 delims= " %%i in ('findstr "server_addr" 配置文件\tmp.txt') do 
 if "%server_addr%"=="111.67.198.177" set servername=#9北京1节点
 if "%server_addr%"=="123.57.52.159" set servername=#10北京2节点
 if "%server_addr%"=="43.226.152.90" set servername=#14辽宁节点
-if "%server_addr%"=="cn-gy-dx-1.msrx.online" set servername=#15贵州节点
+if "%server_addr%"=="cn-gy-dx-1.mefrp.com" set servername=#15贵州节点
 if "%server_addr%"=="124.223.79.186" set servername=#18上海节点
 if "%server_addr%"=="124.222.202.111" set servername=#19上海节点
 if "%server_addr%"=="43.158.199.131" set servername=#20孟买节点
 if "%server_addr%"=="106.12.142.44" set servername=#21广州节点
-if "%server_addr%"=="cn-bj-lt-1.msrx.online" set servername=#23北京3节点
-if "%server_addr%"=="cn-bj-yd-1.msrx.online" set servername=#24北京4节点
+if "%server_addr%"=="cn-bj-lt-1.mefrp.com" set servername=#23北京3节点
+if "%server_addr%"=="cn-bj-yd-1.mefrp.com" set servername=#24北京4节点
 if "%server_addr%"=="107.151.196.109" set servername=#25香港节点
-if "%server_addr%"=="cn-gd-lt-1.msrx.online" set servername=#26中山节点
+if "%server_addr%"=="cn-gd-lt-1.mefrp.com" set servername=#26中山节点
+if "%server_addr%"=="103.45.144.46" set servername=#27呼和浩特节点
+if "%server_addr%"=="de-tlg-bgp-1.mefrp.com" set servername=#28德国节点
+if "%server_addr%"=="cn-gs-yd-1.mefrp.com" set servername=#29甘肃节点
+if "%server_addr%"=="de-tlg-bgp-2.mefrp.com" set servername=#30德国节点
+if "%server_addr%"=="cn-jx-dx-1.mefrp.com" set servername=#32江西节点
 
 
 ::计算配置中有多少个隧道（num1）

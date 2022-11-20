@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 mode con cols=66 lines=30
 COLOR 0E
-TITLE ME FRP Æô¶¯Æ÷ SNASHOT-3.0
+TITLE ME FRP Æô¶¯Æ÷ SNASHOT-1.0
 
 ECHO.=---------------------------------------------------------------=
 ECHO.
