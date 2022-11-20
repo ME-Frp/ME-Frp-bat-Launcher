@@ -1,1 +1,1 @@
-set frpwindow=off
+set frpwindow=on

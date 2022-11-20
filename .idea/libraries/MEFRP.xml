@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="MEFRP启动器">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/配置文件备份.zip!/" />
+      <root url="jar://$PROJECT_DIR$/program.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

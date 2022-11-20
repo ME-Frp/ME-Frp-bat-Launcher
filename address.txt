@@ -1,1 +1,1 @@
-https://frp.msrx.online/?page=panel&module=configuration&server=1
+https://mefrp.cn/?page=panel&module=configuration&server=1

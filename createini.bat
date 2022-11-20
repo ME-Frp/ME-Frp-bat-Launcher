@@ -6,13 +6,20 @@
 ::读取配置中的server_addr以展示服务器名
 set servername=未知节点
 for /f "tokens=3 delims= " %%i in ('findstr "server_addr" 配置文件\tmp.txt') do set server_addr=%%i
-if "%server_addr%"=="cn-jx-dx-1.msrx.online" set servername=CN江西电信1Gbps节点
-if "%server_addr%"=="1.1.1.1" set servername=纯V6不推荐甘肃移动300Mbps/1Gbps节点
-if "%server_addr%"=="42.193.51.221" set servername=CN推荐腾讯云成都8Mbps/100Mbps节点
-if "%server_addr%"=="1.13.246.101" set servername=CN推荐腾讯云南京8Mbps节点-2
-if "%server_addr%"=="154.204.183.167" set servername=CN推荐香港5Mbps/5Mbps节点
-if "%server_addr%"=="172.105.229.23" set servername=JP推荐日本1Gbps/10Gps节点
-if "%server_addr%"=="45.33.111.121" set servername=US推荐美国1Gbps/10Gps节点
+if "%server_addr%"=="111.67.198.177" set servername=#9北京1节点
+if "%server_addr%"=="123.57.52.159" set servername=#10北京2节点
+if "%server_addr%"=="43.226.152.90" set servername=#14辽宁节点
+if "%server_addr%"=="cn-gy-dx-1.msrx.online" set servername=#15贵州节点
+if "%server_addr%"=="124.223.79.186" set servername=#18上海节点
+if "%server_addr%"=="124.222.202.111" set servername=#19上海节点
+if "%server_addr%"=="43.158.199.131" set servername=#20孟买节点
+if "%server_addr%"=="106.12.142.44" set servername=#21广州节点
+if "%server_addr%"=="cn-bj-lt-1.msrx.online" set servername=#23北京3节点
+if "%server_addr%"=="cn-bj-yd-1.msrx.online" set servername=#24北京4节点
+if "%server_addr%"=="107.151.196.109" set servername=#25香港节点
+if "%server_addr%"=="cn-gd-lt-1.msrx.online" set servername=#26中山节点
+
+
 ::计算配置中有多少个隧道（num1）
 for %%i in (配置文件\tmp.txt) do (
     for /f %%a in ('type %%~si ^|find /c "privilege_mode"')do (
@@ -75,7 +82,7 @@ for /f "tokens=3 delims= " %%i in ('findstr "use_compression" 配置文件\tmp.txt')
 echo.use_compression = %use_compression%>>配置文件\%frpname%\frpc.ini
 echo.>>配置文件\%frpname%\frpc.ini
 ::写入列表.txt
-echo.%frpnum% 隧道%frpnum% %frpname% %server_addr%:%remote_port%>>配置文件\列表.txt
+echo.%frpnum% 隧道%frpnum% %frpname% %servername%-IP:%server_addr%:%remote_port%>>配置文件\列表.txt
 ::删除tmp.txt中刚刚添加完成的隧道
 :CREATEINI-4
 ::首先确定frpname所在行号

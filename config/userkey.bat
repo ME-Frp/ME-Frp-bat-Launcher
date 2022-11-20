@@ -1,1 +1,1 @@
-set userkey=blank
+set userkey=
