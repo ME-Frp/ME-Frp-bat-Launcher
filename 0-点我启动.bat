@@ -218,8 +218,7 @@ pause>nul
 goto START
 
 :editini-9
-::curl "https://frp.msrx.online/api/index.php?action=getconf&&apitoken=RXFRPToken|1&&token=%userkey%&node=%nodenum%" 1>>配置文件\tmp2.txt 2>nul
-curl "http://1.15.79.61:666/api/index.php?action=getconf&&apitoken=RXFRPToken|%nodenum%&&token=%userkey%&node=%nodenum%" 1>配置文件\tmp2.txt 2>nul"
+curl "https://frp.msrx.online/api/index.php?action=getconf&&apitoken=RXFRPToken|1&&token=%userkey%&node=%nodenum%" 1>>配置文件\tmp2.txt 2>nul
 @(for /f "delims=" %%i in (配置文件\tmp2.txt) do @(set /p a=%%i<nul&echo.))>>配置文件\tmp.txt
 ::https://zhidao.baidu.com/question/1674068097323082507.html
 del 配置文件\tmp2.txt
