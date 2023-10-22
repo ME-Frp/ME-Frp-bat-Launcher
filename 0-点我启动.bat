@@ -2,15 +2,15 @@
 setlocal enabledelayedexpansion
 mode con cols=66 lines=30
 COLOR 0E
-TITLE ME FRP 启动器 SNASHOT-1.0
+TITLE ME FRP 脝么露炉脝梅 SNASHOT-1.0
 
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO.                              更新启动器ing...
+ECHO.                              赂眉脨脗脝么露炉脝梅ing...
 ECHO.
 ECHO.=---------------------------------------------------------------=
 
-curl -o new.zip https://cdn.114514.space/Download/update/new.zip
+curl -o new.zip https://download.mefrp.top/bat/update/new.zip
 
 
 7z.exe -y x "new.zip" -o".\"
