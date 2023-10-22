@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 mode con cols=66 lines=30
 COLOR 0E
-TITLE ME FRP Æô¶¯Æ÷ SNASHOT-3.0 MAX#27
+TITLE ME FRP å¯åŠ¨å™¨ SNASHOT-3.0 MAX#27
 
 :START
 CLS
@@ -12,104 +12,104 @@ ECHO.                              MEFrp
 ECHO.
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO. 1.Æô¶¯/¹Ø±ÕËíµÀ£¨Ä¬ÈÏ£©
+ECHO. 1.å¯åŠ¨/å…³é—­éš§é“ï¼ˆé»˜è®¤ï¼‰
 ECHO.
-ECHO. 2.µ¼Èë/¸üĞÂÅäÖÃ£¨»áÉ¾³ıµ±Ç°ËùÓĞÅäÖÃÎÄ¼ş£©
+ECHO. 2.å¯¼å…¥/æ›´æ–°é…ç½®ï¼ˆä¼šåˆ é™¤å½“å‰æ‰€æœ‰é…ç½®æ–‡ä»¶ï¼‰
 ECHO.
-ECHO. 3.ÖØÖÃFRP³ÌĞò
+ECHO. 3.é‡ç½®FRPç¨‹åº
 ECHO.
-ECHO. 4.ÊäÈë/¸ü¸ÄÓÃ»§ÃÜÔ¿
+ECHO. 4.è¾“å…¥/æ›´æ”¹ç”¨æˆ·å¯†é’¥
 ECHO.
-ECHO. 5.Ê¹ÓÃËµÃ÷
+ECHO. 5.ä½¿ç”¨è¯´æ˜
 ECHO.
-ECHO. 6.·ÃÎÊ¹ÙÍø
+ECHO. 6.è®¿é—®å®˜ç½‘
 ECHO.
-ECHO.  ? 2022 MCServerXÍøÂçMEFRPÔËĞĞ×éºÍ¿á°²@Ä³Ôô±£ÁôÒ»ÇĞÈ¨Àû.
+ECHO.  ? 2022-2023 é•œç¼˜æ˜ å°„è¿è¡Œç»„å’Œå¼€å‘è€…(æŸè´¼)ä¿ç•™ä¸€åˆ‡æƒåˆ©.
 set choice=1
-set /p choice= ÊäÈëÊı×Ö°´Enter¼ÌĞø£º
+set /p choice= è¾“å…¥æ•°å­—æŒ‰Enterç»§ç»­ï¼š
 if "%choice%"=="1" goto STARTFRP
 if "%choice%"=="2" goto EDITINI
 if "%choice%"=="3" goto RESETLAUNCHER
-::if "%choice%"=="4" start https://mefrp.cn/?page=panel&module=addproxy & echo.ÄæÏò32038ÕıÏò32032>tmp.txt & clip < tmp.txt & del tmp.txt
+::if "%choice%"=="4" start https://www.mefrp.com/ & echo.é€†å‘32038æ­£å‘32032>tmp.txt & clip < tmp.txt & del tmp.txt
 if "%choice%"=="4" goto USERKEY
 if "%choice%"=="5" goto INSTRUCTION
-if "%choice%"=="6" start https://mefrp.cn/
+if "%choice%"=="6" start https://mefrp.com/
 goto START
 
 :USERKEY
 CLS
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO.                        ÊäÈë/¸ü¸ÄÓÃ»§ÃÜÔ¿
+ECHO.                        è¾“å…¥/æ›´æ”¹ç”¨æˆ·å¯†é’¥
 ECHO.
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO.×¢Òâ£¡ÇëÎğÔÚ´ËÒ³ÃæÅÄÕÕ¡¢½ØÆÁ¡¢Â¼ÆÁ£¬ÓÃ»§ÃÜÔ¿µÈÍ¬ÓÚÕË»§ÃÜÂë£¬Ğ¹Â¶»áµ¼ÖÂÑÏÖØºó¹û£¡
+ECHO.æ³¨æ„ï¼è¯·å‹¿åœ¨æ­¤é¡µé¢æ‹ç…§ã€æˆªå±ã€å½•å±ï¼Œç”¨æˆ·å¯†é’¥ç­‰åŒäºè´¦æˆ·å¯†ç ï¼Œæ³„éœ²ä¼šå¯¼è‡´ä¸¥é‡åæœï¼
 ECHO.
 set userkey=blank
-set /p userkey= ÇëÊäÈëÓÃ»§ÃÜÔ¿£º
-if "%userkey%"=="blank" msg %username% "Î´ÊäÈëÈÎºÎÖµ£¬ÓÃ»§ÃÜÔ¿±£³Ö²»±ä¡£" & goto START
+set /p userkey= è¯·è¾“å…¥ç”¨æˆ·å¯†é’¥ï¼š
+if "%userkey%"=="blank" msg %username% "æœªè¾“å…¥ä»»ä½•å€¼ï¼Œç”¨æˆ·å¯†é’¥ä¿æŒä¸å˜ã€‚" & goto START
 echo.set userkey=%userkey%>config\userkey.bat
 call config\userkey.bat
-msg %username% "ÒÑ±£´æÓÃ»§ÃÜÔ¿¡£"
+msg %username% "å·²ä¿å­˜ç”¨æˆ·å¯†é’¥ã€‚"
 goto START
 
 :INSTRUCTION
 CLS
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO.                     ME FRP Æô¶¯Æ÷ Ê¹ÓÃËµÃ÷
+ECHO.                     ME FRP å¯åŠ¨å™¨ ä½¿ç”¨è¯´æ˜
 ECHO.
 ECHO.=---------------------------------------------------------------=
 ECHO.
 ECHO.
-ECHO. Ê×ÏÈÄãĞèÒª·ÃÎÊ MEFrp ¹ÙÍø£¬×¢²áÒ»¸öÕËºÅ¡£
-ECHO. https://mefrp.cn
+ECHO. é¦–å…ˆä½ éœ€è¦è®¿é—® MEFrp å®˜ç½‘ï¼Œæ³¨å†Œä¸€ä¸ªè´¦å·ã€‚
+ECHO. https://mefrp.com
 ECHO.
-ECHO. È»ºóÇëµã»÷ÍøÒ³×ó²à ´´½¨ËíµÀ À¸Ä¿£¬´´½¨ÄãµÄËíµÀ¡£
+ECHO. ç„¶åè¯·ç‚¹å‡»ç½‘é¡µå·¦ä¾§ åˆ›å»ºéš§é“ æ ç›®ï¼Œåˆ›å»ºä½ çš„éš§é“ã€‚
 ECHO.
-ECHO. È»ºóÇëÊ¹ÓÃÖ÷²Ëµ¥ µ¼Èë/¸üĞÂÅäÖÃ ¹¦ÄÜ£¬µ¼ÈëÄãµÄÅäÖÃ¡£
+ECHO. ç„¶åè¯·ä½¿ç”¨ä¸»èœå• å¯¼å…¥/æ›´æ–°é…ç½® åŠŸèƒ½ï¼Œå¯¼å…¥ä½ çš„é…ç½®ã€‚
 ECHO.
-ECHO. ³É¹¦µ¼Èëºó£¬¾Í¿ÉÒÔÊ¹ÓÃÆô¶¯Æ÷Æô¶¯ËíµÀÀ²£¡
+ECHO. æˆåŠŸå¯¼å…¥åï¼Œå°±å¯ä»¥ä½¿ç”¨å¯åŠ¨å™¨å¯åŠ¨éš§é“å•¦ï¼
 ECHO.
-ECHO. ÖØÖÃFRP³ÌĞò¹¦ÄÜµÄËµÃ÷£ºÎªÁËÊµÏÖËíµÀ¶à¿ª£¬³õ´ÎÆô¶¯ËíµÀÊ±»á½«FRPÏà  ¹Ø³ÌĞò½âÑ¹µ½ÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼¡£Èç¹û³ÌĞòÒâÍâËğ»µ£¬¿ÉÒÔÊ¹ÓÃ´Ë¹¦ÄÜÖØ  ÖÃ¡£
+ECHO. é‡ç½®FRPç¨‹åºåŠŸèƒ½çš„è¯´æ˜ï¼šä¸ºäº†å®ç°éš§é“å¤šå¼€ï¼Œåˆæ¬¡å¯åŠ¨éš§é“æ—¶ä¼šå°†FRPç›¸  å…³ç¨‹åºè§£å‹åˆ°é…ç½®æ–‡ä»¶æ‰€åœ¨ç›®å½•ã€‚å¦‚æœç¨‹åºæ„å¤–æŸåï¼Œå¯ä»¥ä½¿ç”¨æ­¤åŠŸèƒ½é‡  ç½®ã€‚
 ECHO.
 ECHO.
-ECHO.bat½Å±¾×÷Õß£º¿á°²@Ä³Ôô¡£°´ÈÎÒâ¼ü·µ»ØÖ÷²Ëµ¥¡£
+ECHO.batè„šæœ¬ä½œè€…ï¼šé…·å®‰@æŸè´¼ã€‚æŒ‰ä»»æ„é”®è¿”å›ä¸»èœå•ã€‚
 pause>nul
 goto START
 
 :RESETLAUNCHER
-for /R ÅäÖÃÎÄ¼ş %%f in (*.exe) do del %%f
-for /R ÅäÖÃÎÄ¼ş %%f in (*.bat) do del %%f
-for /R ÅäÖÃÎÄ¼ş %%f in (*.vbs) do del %%f
+for /R é…ç½®æ–‡ä»¶ %%f in (*.exe) do del %%f
+for /R é…ç½®æ–‡ä»¶ %%f in (*.bat) do del %%f
+for /R é…ç½®æ–‡ä»¶ %%f in (*.vbs) do del %%f
 goto START
 
 :STARTFRP
 CLS
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO.                            Æô¶¯ËíµÀ
+ECHO.                            å¯åŠ¨éš§é“
 ECHO.
 ECHO.=---------------------------------------------------------------=
 ECHO.
-if not exist ÅäÖÃÎÄ¼ş\ÁĞ±í.txt ECHO.ÕÒ²»µ½ÅäÖÃÎÄ¼şÁĞ±í£¡ÇëÏÈÊ¹ÓÃ µ¼Èë/¸üĞÂÅäÖÃ ¹¦ÄÜ¡£°´ÈÎÒâ¼ü»ØÖ÷²Ëµ¥¡£ & pause>nul & goto START
-ECHO.Æô¶¯¹Ø±ÕËíµÀÇëÊäÈëËíµÀ±àºÅ£¬ÈôËíµÀÎ´Æô¶¯ÔòÆô¶¯£¬ÒÑÆô¶¯Ôò¹Ø±Õ¡£
-ECHO.Æô¶¯ËíµÀÊ±»á×Ô¶¯¸´ÖÆµØÖ·µ½¼ôÌù°å¡£
-ECHO.²»ÊäÈëÖ±½Ó°´EnterË¢ĞÂËíµÀ×´Ì¬¡£³¤Ê±¼äÀë¿ªºóÇëÏÈË¢ĞÂ×´Ì¬ÔÙ²Ù×÷¡£
+if not exist é…ç½®æ–‡ä»¶\åˆ—è¡¨.txt ECHO.æ‰¾ä¸åˆ°é…ç½®æ–‡ä»¶åˆ—è¡¨ï¼è¯·å…ˆä½¿ç”¨ å¯¼å…¥/æ›´æ–°é…ç½® åŠŸèƒ½ã€‚æŒ‰ä»»æ„é”®å›ä¸»èœå•ã€‚ & pause>nul & goto START
+ECHO.å¯åŠ¨å…³é—­éš§é“è¯·è¾“å…¥éš§é“ç¼–å·ï¼Œè‹¥éš§é“æœªå¯åŠ¨åˆ™å¯åŠ¨ï¼Œå·²å¯åŠ¨åˆ™å…³é—­ã€‚
+ECHO.å¯åŠ¨éš§é“æ—¶ä¼šè‡ªåŠ¨å¤åˆ¶åœ°å€åˆ°å‰ªè´´æ¿ã€‚
+ECHO.ä¸è¾“å…¥ç›´æ¥æŒ‰Enteråˆ·æ–°éš§é“çŠ¶æ€ã€‚é•¿æ—¶é—´ç¦»å¼€åè¯·å…ˆåˆ·æ–°çŠ¶æ€å†æ“ä½œã€‚
 ECHO.
 set frpnumtotal=blank
-for /f "tokens=1 delims= " %%i in ('findstr "ËíµÀ" ÅäÖÃÎÄ¼ş\ÁĞ±í.txt') do set frpnumtotal=%%i
-if "%frpnumtotal%"=="blank" ECHO.ÅäÖÃÎÄ¼şÁĞ±íÖĞÎŞËíµÀ£¡ÇëÏÈÊ¹ÓÃ µ¼Èë/¸üĞÂÅäÖÃ ¹¦ÄÜ¡£°´ÈÎÒâ¼ü»ØÖ÷²Ëµ¥¡£ & pause>nul & goto START
+for /f "tokens=1 delims= " %%i in ('findstr "éš§é“" é…ç½®æ–‡ä»¶\åˆ—è¡¨.txt') do set frpnumtotal=%%i
+if "%frpnumtotal%"=="blank" ECHO.é…ç½®æ–‡ä»¶åˆ—è¡¨ä¸­æ— éš§é“ï¼è¯·å…ˆä½¿ç”¨ å¯¼å…¥/æ›´æ–°é…ç½® åŠŸèƒ½ã€‚æŒ‰ä»»æ„é”®å›ä¸»èœå•ã€‚ & pause>nul & goto START
 set frpnum=0
 :STARTFRP-2
 set /a frpnum+=1
 if %frpnum% GTR %frpnumtotal% goto STARTFRP-3
-for /f "tokens=3 delims= " %%i in ('findstr "ËíµÀ%frpnum%" ÅäÖÃÎÄ¼ş\ÁĞ±í.txt') do set frpname=%%i
-for /f "tokens=4 delims= " %%i in ('findstr "ËíµÀ%frpnum%" ÅäÖÃÎÄ¼ş\ÁĞ±í.txt') do set frpaddress=%%i
-TASKLIST /FI "IMAGENAME eq frpc-%frpname%.exe" | find "Ã»ÓĞÔËĞĞµÄÈÎÎñÆ¥ÅäÖ¸¶¨±ê×¼" 1>nul 2>nul
-if "%errorlevel%"=="0" ECHO.%frpnum%.Æô¶¯ËíµÀ%frpname% %frpaddress% & goto STARTFRP-2
-ECHO.%frpnum%.[ÔËĞĞÖĞ]¹Ø±ÕËíµÀ%frpname% %frpaddress%
+for /f "tokens=3 delims= " %%i in ('findstr "éš§é“%frpnum%" é…ç½®æ–‡ä»¶\åˆ—è¡¨.txt') do set frpname=%%i
+for /f "tokens=4 delims= " %%i in ('findstr "éš§é“%frpnum%" é…ç½®æ–‡ä»¶\åˆ—è¡¨.txt') do set frpaddress=%%i
+TASKLIST /FI "IMAGENAME eq frpc-%frpname%.exe" | find "æ²¡æœ‰è¿è¡Œçš„ä»»åŠ¡åŒ¹é…æŒ‡å®šæ ‡å‡†" 1>nul 2>nul
+if "%errorlevel%"=="0" ECHO.%frpnum%.å¯åŠ¨éš§é“%frpname% %frpaddress% & goto STARTFRP-2
+ECHO.%frpnum%.[è¿è¡Œä¸­]å…³é—­éš§é“%frpname% %frpaddress%
 goto STARTFRP-2
 :STARTFRP-3
 ECHO.
@@ -117,14 +117,14 @@ if not exist config\frpwindow.bat echo.set frpwindow=off>config\frpwindow.bat
 set frpwindow=blank
 call config\frpwindow.bat
 if "%frpwindow%"=="blank" echo.set frpwindow=off>config\frpwindow.bat & goto STARTFRP-3
-if "%frpwindow%"=="off" ECHO.A.ÏÔÊ¾ËíµÀÔËĞĞ´°¿Ú£¨µ±Ç°ÉèÖÃÎªÒş²Ø´°¿Ú£©
-if "%frpwindow%"=="on" ECHO.A.Òş²ØËíµÀÔËĞĞ´°¿Ú£¨µ±Ç°ÉèÖÃÎªÏÔÊ¾´°¿Ú£©
-ECHO.B.¹Ø±ÕËùÓĞËíµÀ
-ECHO.C.»ØÖ÷²Ëµ¥
+if "%frpwindow%"=="off" ECHO.A.æ˜¾ç¤ºéš§é“è¿è¡Œçª—å£ï¼ˆå½“å‰è®¾ç½®ä¸ºéšè—çª—å£ï¼‰
+if "%frpwindow%"=="on" ECHO.A.éšè—éš§é“è¿è¡Œçª—å£ï¼ˆå½“å‰è®¾ç½®ä¸ºæ˜¾ç¤ºçª—å£ï¼‰
+ECHO.B.å…³é—­æ‰€æœ‰éš§é“
+ECHO.C.å›ä¸»èœå•
 ECHO.
 ECHO.
 set choice=refresh
-set /p choice= ÊäÈëÑ¡Ïî°´Enter¼ÌĞø£º
+set /p choice= è¾“å…¥é€‰é¡¹æŒ‰Enterç»§ç»­ï¼š
 if "%choice%"=="refresh" goto STARTFRP
 if "%choice%"=="A" call :startfrp-4 & goto STARTFRP
 if "%choice%"=="a" call :startfrp-4 & goto STARTFRP
@@ -132,17 +132,17 @@ if "%choice%"=="B" echo.noticeoff>noticeoff & taskkill /f /im frpc-* & TIMEOUT /
 if "%choice%"=="b" echo.noticeoff>noticeoff & taskkill /f /im frpc-* & TIMEOUT /T 1 /NOBREAK>nul & goto STARTFRP
 if "%choice%"=="C" goto START
 if "%choice%"=="c" goto START
-find "ËíµÀ%choice%" "ÅäÖÃÎÄ¼ş\ÁĞ±í.txt" 1>nul 2>nul
-if not "%errorlevel%"=="0" ECHO. & ECHO.ÊäÈë´íÎó»òËíµÀ²»´æÔÚ£¡ÇëÊäÈëËíµÀ±àºÅÈç1£¬2£¬3¡£°´ÈÎÒâ¼üÖØĞÂÊäÈë¡£ & pause>nul & goto STARTFRP
-for /f "tokens=3 delims= " %%i in ('findstr "ËíµÀ%choice%" ÅäÖÃÎÄ¼ş\ÁĞ±í.txt') do set frpname=%%i
-for /f "tokens=4 delims= " %%i in ('findstr "ËíµÀ%choice%" ÅäÖÃÎÄ¼ş\ÁĞ±í.txt') do set frpaddress=%%i
-TASKLIST /FI "IMAGENAME eq frpc-%frpname%.exe" | find "Ã»ÓĞÔËĞĞµÄÈÎÎñÆ¥ÅäÖ¸¶¨±ê×¼" 1>nul 2>nul
+find "éš§é“%choice%" "é…ç½®æ–‡ä»¶\åˆ—è¡¨.txt" 1>nul 2>nul
+if not "%errorlevel%"=="0" ECHO. & ECHO.è¾“å…¥é”™è¯¯æˆ–éš§é“ä¸å­˜åœ¨ï¼è¯·è¾“å…¥éš§é“ç¼–å·å¦‚1ï¼Œ2ï¼Œ3ã€‚æŒ‰ä»»æ„é”®é‡æ–°è¾“å…¥ã€‚ & pause>nul & goto STARTFRP
+for /f "tokens=3 delims= " %%i in ('findstr "éš§é“%choice%" é…ç½®æ–‡ä»¶\åˆ—è¡¨.txt') do set frpname=%%i
+for /f "tokens=4 delims= " %%i in ('findstr "éš§é“%choice%" é…ç½®æ–‡ä»¶\åˆ—è¡¨.txt') do set frpaddress=%%i
+TASKLIST /FI "IMAGENAME eq frpc-%frpname%.exe" | find "æ²¡æœ‰è¿è¡Œçš„ä»»åŠ¡åŒ¹é…æŒ‡å®šæ ‡å‡†" 1>nul 2>nul
 if not "%errorlevel%"=="0" echo.noticeoff>noticeoff & taskkill /f /im frpc-%frpname%.exe & TIMEOUT /T 1 /NOBREAK>nul & goto STARTFRP
-if not exist ÅäÖÃÎÄ¼ş\%frpname%\frpc.ini ECHO. & ECHO.ÕÒ²»µ½Ö¸¶¨ËíµÀµÄÅäÖÃÎÄ¼ş£¡Çë¸ü»»ËíµÀ»òµ¼Èë/¸üĞÂÅäÖÃ¡£ & pause & goto STARTFRP
-if not exist ÅäÖÃÎÄ¼ş\%frpname%\frpc-%frpname%.exe 7z.exe x "program.zip" -o"ÅäÖÃÎÄ¼ş\%frpname%\" -y & ren ÅäÖÃÎÄ¼ş\%frpname%\frpc.exe frpc-%frpname%.exe
-if not exist ÅäÖÃÎÄ¼ş\%frpname%\startfrp.vbs 7z.exe x "program.zip" -o"ÅäÖÃÎÄ¼ş\%frpname%\" -y
-if "%frpwindow%"=="off" cd ÅäÖÃÎÄ¼ş\%frpname%\ & start startfrp.vbs %frpname% %frpaddress% & cd /D %~dp0
-if "%frpwindow%"=="on" start ÅäÖÃÎÄ¼ş\%frpname%\startfrp.bat %frpname% %frpaddress%
+if not exist é…ç½®æ–‡ä»¶\%frpname%\frpc.ini ECHO. & ECHO.æ‰¾ä¸åˆ°æŒ‡å®šéš§é“çš„é…ç½®æ–‡ä»¶ï¼è¯·æ›´æ¢éš§é“æˆ–å¯¼å…¥/æ›´æ–°é…ç½®ã€‚ & pause & goto STARTFRP
+if not exist é…ç½®æ–‡ä»¶\%frpname%\frpc-%frpname%.exe 7z.exe x "program.zip" -o"é…ç½®æ–‡ä»¶\%frpname%\" -y & ren é…ç½®æ–‡ä»¶\%frpname%\frpc.exe frpc-%frpname%.exe
+if not exist é…ç½®æ–‡ä»¶\%frpname%\startfrp.vbs 7z.exe x "program.zip" -o"é…ç½®æ–‡ä»¶\%frpname%\" -y
+if "%frpwindow%"=="off" cd é…ç½®æ–‡ä»¶\%frpname%\ & start startfrp.vbs %frpname% %frpaddress% & cd /D %~dp0
+if "%frpwindow%"=="on" start é…ç½®æ–‡ä»¶\%frpname%\startfrp.bat %frpname% %frpaddress%
 TIMEOUT /T 1 /NOBREAK>nul
 goto STARTFRP
 
@@ -155,22 +155,22 @@ goto :eof
 CLS
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO.                          µ¼Èë/¸üĞÂÅäÖÃ
+ECHO.                          å¯¼å…¥/æ›´æ–°é…ç½®
 ECHO.
 ECHO.=---------------------------------------------------------------=
 ECHO.
 ECHO.
-ECHO.µ¼ÈëÇ°»á×Ô¶¯±¸·İ²¢É¾³ıµ±Ç°ËùÓĞÅäÖÃ£¬Èç¹ûĞèÒª¿ÉÒÔÑ¡Ôñ»Ö¸´¡£
-ECHO.±¸·İÎÄ¼şÖ»»á±£ÁôÒ»¸ö£¬ÈçÓĞĞÂµÄ±¸·İÔò»á¸²¸Ç¾ÉµÄ¡£
+ECHO.å¯¼å…¥å‰ä¼šè‡ªåŠ¨å¤‡ä»½å¹¶åˆ é™¤å½“å‰æ‰€æœ‰é…ç½®ï¼Œå¦‚æœéœ€è¦å¯ä»¥é€‰æ‹©æ¢å¤ã€‚
+ECHO.å¤‡ä»½æ–‡ä»¶åªä¼šä¿ç•™ä¸€ä¸ªï¼Œå¦‚æœ‰æ–°çš„å¤‡ä»½åˆ™ä¼šè¦†ç›–æ—§çš„ã€‚
 ECHO.
 ECHO.
-ECHO.1.×Ô¶¯µ¼Èë(ÍÆ¼ö)      3.´Ó¾É°æ±¾µ¼Èë
+ECHO.1.è‡ªåŠ¨å¯¼å…¥(æ¨è)      3.ä»æ—§ç‰ˆæœ¬å¯¼å…¥
 ECHO.
-ECHO.4.»Ö¸´ÉÏÒ»´ÎµÄ±¸·İ   5.»ØÖ÷²Ëµ¥
+ECHO.4.æ¢å¤ä¸Šä¸€æ¬¡çš„å¤‡ä»½   5.å›ä¸»èœå•
 ECHO.
 ECHO.
 set choice=1
-set /p choice= ÊäÈëÊı×Ö°´Enter¼ÌĞø£º
+set /p choice= è¾“å…¥æ•°å­—æŒ‰Enterç»§ç»­ï¼š
 if "%choice%"=="1" goto EDITINI-E
 if "%choice%"=="2" goto EDITINI-C
 if "%choice%"=="3" goto EDITINI-B
@@ -183,17 +183,17 @@ call :editini-clean
 CLS
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO.                          µ¼Èë/¸üĞÂÅäÖÃ
+ECHO.                          å¯¼å…¥/æ›´æ–°é…ç½®
 ECHO.
 ECHO.=---------------------------------------------------------------=
 ECHO.
 set userkey=blank
 call config\userkey.bat
-if "%userkey%"=="blank" ECHO.ÄãÉĞÎ´ÊäÈëÓÃ»§ÃÜÔ¿£¬°´ÈÎÒâ¼üÊäÈë¡£ & pause>nul & goto USERKEY
-ECHO.Ä¬ÈÏÊ¹ÓÃÒÑÊäÈëµÄÓÃ»§ÃÜÔ¿£¬ÈçĞè¸ü¸ÄÇëÔÚÖ÷²Ëµ¥²Ù×÷¡£
-ECHO.Èô»ñÈ¡²»µ½ÈÎºÎËíµÀ£¬¿ÉÄÜÔ­Òò£ºÎ´½¨Á¢ËíµÀ¡¢ÓÃ»§ÃÜÔ¿´íÎó¡¢ÍøÂçÔ­Òò
+if "%userkey%"=="blank" ECHO.ä½ å°šæœªè¾“å…¥ç”¨æˆ·å¯†é’¥ï¼ŒæŒ‰ä»»æ„é”®è¾“å…¥ã€‚ & pause>nul & goto USERKEY
+ECHO.é»˜è®¤ä½¿ç”¨å·²è¾“å…¥çš„ç”¨æˆ·å¯†é’¥ï¼Œå¦‚éœ€æ›´æ”¹è¯·åœ¨ä¸»èœå•æ“ä½œã€‚
+ECHO.è‹¥è·å–ä¸åˆ°ä»»ä½•éš§é“ï¼Œå¯èƒ½åŸå› ï¼šæœªå»ºç«‹éš§é“ã€ç”¨æˆ·å¯†é’¥é”™è¯¯ã€ç½‘ç»œåŸå› 
 ECHO.
-ECHO.[i]½«Öğ¸öÁ¬½Ó·şÎñÆ÷»ñÈ¡ËíµÀÁĞ±í£¬ËÙ¶ÈÈ¡¾öÓÚ¹ÙÍøºÍÄãµÄÍøÂç¡£
+ECHO.[i]å°†é€ä¸ªè¿æ¥æœåŠ¡å™¨è·å–éš§é“åˆ—è¡¨ï¼Œé€Ÿåº¦å–å†³äºå®˜ç½‘å’Œä½ çš„ç½‘ç»œã€‚
 
 
 set nodenum=9
@@ -257,14 +257,14 @@ call :editini-9
 call createini.bat
 
 ECHO.
-ECHO.Íê³É¡£°´ÈÎÒâ¼ü»ØÖ÷²Ëµ¥¡£
+ECHO.å®Œæˆã€‚æŒ‰ä»»æ„é”®å›ä¸»èœå•ã€‚
 pause>nul
 goto START
 
 :editini-9
-curl "https://api.mefrp.cn/?action=getconf&&apitoken=MEFRPToken|%nodenum%&token=%userkey%&node=%nodenum%" 1>>ÅäÖÃÎÄ¼ş\tmp2.txt 2>nul
-@(for /f "delims=" %%i in (ÅäÖÃÎÄ¼ş\tmp2.txt) do @(set /p a=%%i<nul&echo.))>>ÅäÖÃÎÄ¼ş\tmp.txt
-del ÅäÖÃÎÄ¼ş\tmp2.txt
+curl "https://api.mefrp.com/api/v1/?action=getconf&&apitoken=MEFRPToken|%nodenum%&token=%userkey%&node=%nodenum%" 1>>é…ç½®æ–‡ä»¶\tmp2.txt 2>nul
+@(for /f "delims=" %%i in (é…ç½®æ–‡ä»¶\tmp2.txt) do @(set /p a=%%i<nul&echo.))>>é…ç½®æ–‡ä»¶\tmp.txt
+del é…ç½®æ–‡ä»¶\tmp2.txt
 goto :eof
 
 
@@ -277,39 +277,39 @@ start "" "%address%"
 CLS
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO.                          µ¼Èë/¸üĞÂÅäÖÃ
+ECHO.                          å¯¼å…¥/æ›´æ–°é…ç½®
 ECHO.
 ECHO.=---------------------------------------------------------------=
 ECHO.
 ECHO.
-ECHO.ÒÑ´ò¿ª¹Ù·½ÅäÖÃÎÄ¼ş»ñÈ¡Ò³Ãæ¡£Èç¹ûÃ»ÓĞµÇÂ½£¬ÇëµÇÂ¼ºó¸´ÖÆÏÂ·½ÍøÖ·²¢Ê¹ÓÃä¯ÀÀÆ÷´ò¿ª¡£
+ECHO.å·²æ‰“å¼€å®˜æ–¹é…ç½®æ–‡ä»¶è·å–é¡µé¢ã€‚å¦‚æœæ²¡æœ‰ç™»é™†ï¼Œè¯·ç™»å½•åå¤åˆ¶ä¸‹æ–¹ç½‘å€å¹¶ä½¿ç”¨æµè§ˆå™¨æ‰“å¼€ã€‚
 ECHO.
 type address.txt & ECHO.
 ECHO.
-ECHO.´ò¿ªºóÇëÑ¡Ôñ·şÎñÆ÷£¬¸´ÖÆÏÂ·½ÅäÖÃÎÄ¼şÄÚÈİ£¬È»ºó°´ÈÎÒâ¼ü¼ÌĞø¡£
+ECHO.æ‰“å¼€åè¯·é€‰æ‹©æœåŠ¡å™¨ï¼Œå¤åˆ¶ä¸‹æ–¹é…ç½®æ–‡ä»¶å†…å®¹ï¼Œç„¶åæŒ‰ä»»æ„é”®ç»§ç»­ã€‚
 ECHO.
 pause>nul
 :EDITINI-1
-del ÅäÖÃÎÄ¼ş\tmp.txt 1>nul 2>nul
+del é…ç½®æ–‡ä»¶\tmp.txt 1>nul 2>nul
 set server_addr=blank
 set remote_port=blank
 call getclickboard.vbs1
-move tmp.txt ÅäÖÃÎÄ¼ş\ 1>nul
-ECHO.ÒÑ±£´æ¼ôÌù°åÄÚÈİ¡£·ÖÎöÖĞ...
+move tmp.txt é…ç½®æ–‡ä»¶\ 1>nul
+ECHO.å·²ä¿å­˜å‰ªè´´æ¿å†…å®¹ã€‚åˆ†æä¸­...
 call createini.bat
 ECHO.
 ECHO.
-ECHO.Èç¹ûÏë¼ÌĞøÌí¼ÓÅäÖÃ£¬ÇëÑ¡ÔñÏÂÒ»¸ö·şÎñÆ÷£¬¸´ÖÆÅäÖÃ²¢°´Enter¼ÌĞø¡£
+ECHO.å¦‚æœæƒ³ç»§ç»­æ·»åŠ é…ç½®ï¼Œè¯·é€‰æ‹©ä¸‹ä¸€ä¸ªæœåŠ¡å™¨ï¼Œå¤åˆ¶é…ç½®å¹¶æŒ‰Enterç»§ç»­ã€‚
 ECHO.
-ECHO.1.¼ÌĞøÌí¼ÓÏÂÒ»¸ö·şÎñÆ÷ÅäÖÃ(Ä¬ÈÏ)   2.½áÊø
+ECHO.1.ç»§ç»­æ·»åŠ ä¸‹ä¸€ä¸ªæœåŠ¡å™¨é…ç½®(é»˜è®¤)   2.ç»“æŸ
 ECHO.
 set choice=1
-set /p choice= ÊäÈëÊı×Ö°´Enter¼ÌĞø£º
-if "%choice%"=="2" del ÅäÖÃÎÄ¼ş\tmp.txt & goto START
+set /p choice= è¾“å…¥æ•°å­—æŒ‰Enterç»§ç»­ï¼š
+if "%choice%"=="2" del é…ç½®æ–‡ä»¶\tmp.txt & goto START
 CLS
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO.                          µ¼Èë/¸üĞÂÅäÖÃ
+ECHO.                          å¯¼å…¥/æ›´æ–°é…ç½®
 ECHO.
 ECHO.=---------------------------------------------------------------=
 ECHO.
@@ -323,33 +323,33 @@ call :editini-clean
 CLS
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO.                          µ¼Èë/¸üĞÂÅäÖÃ
+ECHO.                          å¯¼å…¥/æ›´æ–°é…ç½®
 ECHO.
 ECHO.=---------------------------------------------------------------=
 ECHO.
 ECHO.
-ECHO.ÇëÑ¡Ôñ¾É°æ±¾µÄ ÅäÖÃÎÄ¼ş ÎÄ¼ş¼ĞÒÔµ¼ÈëÊı¾İ¡£
+ECHO.è¯·é€‰æ‹©æ—§ç‰ˆæœ¬çš„ é…ç½®æ–‡ä»¶ æ–‡ä»¶å¤¹ä»¥å¯¼å…¥æ•°æ®ã€‚
 ECHO.
 call selfolder.bat
-if not exist %folderpath%\ÁĞ±í.txt ECHO.Ä¿±êÎÄ¼ş¼ĞÖĞÃ»ÓĞÅäÖÃÎÄ¼şÁĞ±í£¡°´ÈÎÒâ¼ü·µ»Ø¡£ & pause>nul & goto EDITINI
+if not exist %folderpath%\åˆ—è¡¨.txt ECHO.ç›®æ ‡æ–‡ä»¶å¤¹ä¸­æ²¡æœ‰é…ç½®æ–‡ä»¶åˆ—è¡¨ï¼æŒ‰ä»»æ„é”®è¿”å›ã€‚ & pause>nul & goto EDITINI
 set num5=1
 :EDITINI-7
-find "ËíµÀ%num5%" "%folderpath%\ÁĞ±í.txt" 1>nul 2>nul
+find "éš§é“%num5%" "%folderpath%\åˆ—è¡¨.txt" 1>nul 2>nul
 if not "%errorlevel%"=="0" goto EDITINI-8
-for /f "tokens=3 delims= " %%i in ('findstr "ËíµÀ%num5%" %folderpath%\ÁĞ±í.txt') do set frpname=%%i
-copy %folderpath%\ÁĞ±í.txt ÅäÖÃÎÄ¼ş\>nul
-ECHO.µ¼Èë%frpname%...
-if not exist %folderpath%\%frpname%\frpc.ini ECHO.ÕÒ²»µ½ÅäÖÃÎÄ¼ş£¡Ìø¹ı... & set /a num5+=1& goto EDITINI-7
-md ÅäÖÃÎÄ¼ş\%frpname%>nul
-copy %folderpath%\%frpname%\frpc.ini ÅäÖÃÎÄ¼ş\%frpname%\>nul
+for /f "tokens=3 delims= " %%i in ('findstr "éš§é“%num5%" %folderpath%\åˆ—è¡¨.txt') do set frpname=%%i
+copy %folderpath%\åˆ—è¡¨.txt é…ç½®æ–‡ä»¶\>nul
+ECHO.å¯¼å…¥%frpname%...
+if not exist %folderpath%\%frpname%\frpc.ini ECHO.æ‰¾ä¸åˆ°é…ç½®æ–‡ä»¶ï¼è·³è¿‡... & set /a num5+=1& goto EDITINI-7
+md é…ç½®æ–‡ä»¶\%frpname%>nul
+copy %folderpath%\%frpname%\frpc.ini é…ç½®æ–‡ä»¶\%frpname%\>nul
 set /a num5+=1
 goto EDITINI-7
 
 :EDITINI-8
 set /a num5+=-1
 ECHO.
-if "%num5%"=="0" ECHO.Ã»ÓĞÕÒµ½ËíµÀ£¡Õâ¿ÉÄÜÊÇÓÉÓÚÅäÖÃÎÄ¼şÁĞ±íÓĞÎó»òÎÄ¼ş¼ĞÑ¡Ôñ´íÎó¡£°´ÈÎÒâ¼ü»ØÖ÷²Ëµ¥¡£ & pause>nul & goto START
-ECHO.¹²µ¼ÈëËíµÀ%num5%¸ö¡£°´ÈÎÒâ¼ü»ØÖ÷²Ëµ¥¡£
+if "%num5%"=="0" ECHO.æ²¡æœ‰æ‰¾åˆ°éš§é“ï¼è¿™å¯èƒ½æ˜¯ç”±äºé…ç½®æ–‡ä»¶åˆ—è¡¨æœ‰è¯¯æˆ–æ–‡ä»¶å¤¹é€‰æ‹©é”™è¯¯ã€‚æŒ‰ä»»æ„é”®å›ä¸»èœå•ã€‚ & pause>nul & goto START
+ECHO.å…±å¯¼å…¥éš§é“%num5%ä¸ªã€‚æŒ‰ä»»æ„é”®å›ä¸»èœå•ã€‚
 pause>nul
 goto START
 
@@ -357,18 +357,18 @@ goto START
 CLS
 ECHO.=---------------------------------------------------------------=
 ECHO.
-ECHO.                          µ¼Èë/¸üĞÂÅäÖÃ
+ECHO.                          å¯¼å…¥/æ›´æ–°é…ç½®
 ECHO.
 ECHO.=---------------------------------------------------------------=
 ECHO.
-if not exist ÅäÖÃÎÄ¼ş±¸·İ.zip ECHO.Ã»ÓĞÕÒµ½±¸·İ£¡°´ÈÎÒâ¼ü·µ»Ø¡£ & pause>nul & goto EDITINI
+if not exist é…ç½®æ–‡ä»¶å¤‡ä»½.zip ECHO.æ²¡æœ‰æ‰¾åˆ°å¤‡ä»½ï¼æŒ‰ä»»æ„é”®è¿”å›ã€‚ & pause>nul & goto EDITINI
 echo.noticeoff>noticeoff
 taskkill /f /im frpc-* 1>nul 2>nul
-rd /s /Q ÅäÖÃÎÄ¼ş 1>nul 2>nul
-md ÅäÖÃÎÄ¼ş 1>nul 2>nul
-7z.exe x "ÅäÖÃÎÄ¼ş±¸·İ.zip" -o".\" -y
+rd /s /Q é…ç½®æ–‡ä»¶ 1>nul 2>nul
+md é…ç½®æ–‡ä»¶ 1>nul 2>nul
+7z.exe x "é…ç½®æ–‡ä»¶å¤‡ä»½.zip" -o".\" -y
 ECHO.
-ECHO.Íê³É¡£°´ÈÎÒâ¼ü»ØÖ÷²Ëµ¥¡£
+ECHO.å®Œæˆã€‚æŒ‰ä»»æ„é”®å›ä¸»èœå•ã€‚
 pause>nul
 goto START
 
@@ -376,10 +376,10 @@ goto START
 :editini-clean
 echo.noticeoff>noticeoff
 taskkill /f /im frpc-*
-del ÅäÖÃÎÄ¼ş±¸·İ.zip
-ECHO.×Ô¶¯±¸·İ...
-7z.exe a ÅäÖÃÎÄ¼ş±¸·İ.zip .\ÅäÖÃÎÄ¼ş\
-rd /s /Q ÅäÖÃÎÄ¼ş
-md ÅäÖÃÎÄ¼ş
+del é…ç½®æ–‡ä»¶å¤‡ä»½.zip
+ECHO.è‡ªåŠ¨å¤‡ä»½...
+7z.exe a é…ç½®æ–‡ä»¶å¤‡ä»½.zip .\é…ç½®æ–‡ä»¶\
+rd /s /Q é…ç½®æ–‡ä»¶
+md é…ç½®æ–‡ä»¶
 ::https://www.cnblogs.com/EasonJim/p/6087636.html
 goto :eof
